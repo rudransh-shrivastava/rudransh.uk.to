@@ -3,7 +3,6 @@ const { readFileSync, writeFileSync } = require('fs');
 const express = require('express');
 const app = express();
 
-
 app.get('/', (req, res) => {
 	const count = readFileSync('./count.txt');
 	console.log('count ', count)
