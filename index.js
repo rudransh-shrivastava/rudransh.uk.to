@@ -30,4 +30,10 @@ app.get('/', (req, res) => {
 
 });
 
+app.get('/results-summary-component-page', (req, res) => {
+  const filePath = path.join(__dirname, 'results-summary-component-page', 'index.html');
+  const resultsPage = readFileSync(filePath, 'utf-8');
+  res.send(resultsPage);
+});
+
 app.listen(5000, () => console.log('http://localhost:5000/'));
