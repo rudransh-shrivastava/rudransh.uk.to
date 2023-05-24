@@ -1,0 +1,111 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: hsl(225, 100%, 94%);
+}
+body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url("/images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+}
+@media (max-width: 374px) {
+  body {
+    background-image: url("/images/pattern-background-mobile.svg");
+  }
+}
+.container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  max-width: 10rem;
+  min-width: 28.1rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+.container-image svg {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.container-order-summary {
+  display: grid;
+  justify-content: center;
+}
+.container-order-summary h1 {
+  text-align: center;
+  font-weight: 900;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  color: hsl(223, 47%, 23%);
+}
+.container-order-summary p {
+  text-align: center;
+  max-width: 20rem;
+  color: hsl(224, 23%, 55%);
+}
+.container-annual-plan {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 1rem;
+}
+.container-annual-plan-left {
+  display: flex;
+  align-items: center;
+}
+.container-annual-plan-left svg {
+  margin: 1rem;
+}
+.container-annual-plan-left-plan p {
+  margin: 0.3rem;
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+.container-annual-plan-left-plan p:last-child {
+  color: hsl(224, 23%, 55%);
+}
+.container-annual-plan-right {
+  align-self: flex-end;
+  align-self: center;
+}
+.container-annual-plan-right a {
+  margin-right: 1.5rem;
+  color: hsl(245, 75%, 52%);
+  font-weight: 900;
+}
+.container-annual-plan-right a:hover {
+  color: hsl(245, 38%, 47%);
+}
+.container-button {
+  display: flex;
+  justify-content: center;
+}
+.container-button button {
+  text-align: center;
+  background-color: hsl(245, 75%, 52%);
+  margin-top: 1.5rem;
+  min-width: 22.2rem;
+  min-height: 3rem;
+  border-radius: 1rem;
+  color: white;
+  font-weight: 900;
+  box-shadow: 1px 1px 1rem rgba(86, 86, 222, 0.2);
+  box-shadow: 0 1rem 2rem rgba(66, 95, 183, 0.3);
+}
+.container-button button:hover {
+  background-color: hsl(245, 38%, 47%);
+}
+.container-cancel p {
+  text-align: center;
+  color: hsl(224, 18%, 45%);
+  font-weight: 900;
+  margin: 2rem;
+}
+.container-cancel p:hover {
+  color: hsl(223, 47%, 23%);
+}
